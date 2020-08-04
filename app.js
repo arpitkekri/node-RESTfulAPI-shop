@@ -14,6 +14,8 @@ mongoose.connect('mongodb+srv://node-rest-shop:' + process.env.MONGO_ATLAS_PW + 
     useNewUrlParser: true, useUnifiedTopology: true
     // useMongoClient: true   // old
 });
+mongoose.Promise = global.Promise;
+
 // app.use is a middleware
 
 /*app.use((req, res, next) => {

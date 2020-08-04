@@ -5,6 +5,7 @@ const express = require('express');
 // Set up express router
 const router = express.Router();
 
+// Handle incoming GET request to /orders
 router.get('/', (req, res, next) => { // GET request on /orders
     res.status(200).json({
         message: 'Orders were fetched to /orders'

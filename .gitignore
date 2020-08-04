@@ -1,2 +1,5 @@
 # Here I can specify path to files or folder which i want to ignore and do not want to push these files on github
+#nodemon.json contain my MONGODB_ATLAS_Password
+
 node_modules/
+nodemon.json

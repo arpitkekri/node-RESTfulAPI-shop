@@ -4,10 +4,16 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
+mongoose.connect('mongodb+srv://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop.wlh2t.mongodb.net/node-rest-shop?retryWrites=true&w=majority', 
+{
+    useNewUrlParser: true, useUnifiedTopology: true
+    // useMongoClient: true   // old
+});
 // app.use is a middleware
 
 /*app.use((req, res, next) => {

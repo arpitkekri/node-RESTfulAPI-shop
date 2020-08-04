@@ -27,6 +27,8 @@
 
 - Idea behind it : Security Concept
 
+![alt text](https://github.com/arpitkekri/node-RESTfulAPI-shop/blob/master/CORS.jpg?raw=true)
+
 - If traditional web app client and server has same url like localhost:3000
 - But in RESTful API client and server typically has different urls like localhost:4000 and localhost:3000 or even the port no is different
 - So request fail but we want to allow access because we serve data not application

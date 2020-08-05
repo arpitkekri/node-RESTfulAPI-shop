@@ -14,6 +14,19 @@ mongoose.connect('mongodb+srv://node-rest-shop:' + process.env.MONGO_ATLAS_PW + 
     useNewUrlParser: true, useUnifiedTopology: true
     // useMongoClient: true   // old
 });
+// mongoose.connect('mongodb://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop-shard-00-00.wlh2t.mongodb.net:27017,node-restfulapi-shop-shard-00-01.wlh2t.mongodb.net:27017,node-restfulapi-shop-shard-00-02.wlh2t.mongodb.net:27017/node-rest-shop?ssl=true&replicaSet=atlas-fwih6i-shard-0&authSource=admin&retryWrites=true&w=majority', 
+// {
+//     useNewUrlParser: true, useUnifiedTopology: true
+//     // useMongoClient: true   // old  
+// });
+
+// mongoose.connect('mongodb://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop-shard-00-00-zcbag.mongodb.net:27017,node-restfulapi-shop-shard-00-01-zcbag.mongodb.net:27017,node-restfulapi-shop-shard-00-02-xvnqv.mongodb.net:27017/zcbag?ssl=true&replicaSet=node-restfulapi-shop-shard-0&authSource=test&retryWrites=true&w=majority', 
+// {
+//     useNewUrlParser: true, useUnifiedTopology: true
+//     // useMongoClient: true   // old  
+// });
+
+
 mongoose.Promise = global.Promise;
 
 // app.use is a middleware
@@ -25,9 +38,9 @@ mongoose.Promise = global.Promise;
 }); */
 
 app.use(morgan('dev')); // In terminal print ` GET /orders/454512 200 2.319 ms - 46 ` basically log for developer
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended: false})); // only support simple encoded url encoded data
 app.use(bodyParser.json()); // extract json data
-
 // For append headers  
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*'); // Headers has key value pair

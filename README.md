@@ -34,4 +34,6 @@
 - So request fail but we want to allow access because we serve data not application
 - We can disable this mechanism by sending some headers from server to client which tell you can have access
 - So ensure we send right headers back
-- npm install --save mongoose
+- npm install --save mongoose  very problemetic
+- npm install --save multer
+- https://github.com/expressjs/multer  bhut problem aayi fir ye pdha

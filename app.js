@@ -12,7 +12,9 @@ const userRoutes = require('./api/routes/user');
 
 mongoose.connect('mongodb+srv://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop.wlh2t.mongodb.net/node-rest-shop?retryWrites=true&w=majority', 
 {
-    useNewUrlParser: true, useUnifiedTopology: true
+    useNewUrlParser: true, 
+    useUnifiedTopology: true,  
+    useCreateIndex: true // To remove DeprecationWarning: collection.ensureIndex is deprecated.
     // useMongoClient: true   // old
 });
 // mongoose.connect('mongodb://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop-shard-00-00.wlh2t.mongodb.net:27017,node-restfulapi-shop-shard-00-01.wlh2t.mongodb.net:27017,node-restfulapi-shop-shard-00-02.wlh2t.mongodb.net:27017/node-rest-shop?ssl=true&replicaSet=atlas-fwih6i-shard-0&authSource=admin&retryWrites=true&w=majority', 

@@ -43,3 +43,7 @@
 
 - npm install bcrypt --save
 - google email regex and go to stack overflow
+- node-jsonwebtoken Github Repo: https://github.com/auth0/node-jsonwebtoken
+- npm install jsonwebtoken
+
+- https://jwt.io/

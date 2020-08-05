@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
+const userRoutes = require('./api/routes/user');
 
 mongoose.connect('mongodb+srv://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop.wlh2t.mongodb.net/node-rest-shop?retryWrites=true&w=majority', 
 {
@@ -59,6 +60,8 @@ app.use((req, res, next) => {
 // Routes which should handle request
 app.use('/products', productRoutes); // when /products come -> go to productRoutes which go to ./api/routes/products
 app.use('/orders', orderRoutes); // when /orders come -> go to orderRoutes which go to ./api/routes/orders
+app.use('/user', userRoutes); // when /user come -> go to userRoutes which go to ./api/routes/user
+
 
 // Error Handling
 // If we reach here means we do not found /products or /orders or a valid URL so other than valid url just print error

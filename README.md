@@ -37,3 +37,9 @@
 - npm install --save mongoose  very problemetic
 - npm install --save multer
 - https://github.com/expressjs/multer  bhut problem aayi fir ye pdha
+
+- More about JWT: https://jwt.io/
+- bcrypt Github Repo: https://github.com/kelektiv/node.bcrypt.js
+
+- npm install bcrypt --save
+- google email regex and go to stack overflow

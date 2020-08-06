@@ -47,7 +47,8 @@ app.use(bodyParser.json()); // extract json data
 // For append headers  
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*'); // Headers has key value pair
-    res.header('Access-Control-Allow-Headers','Origin, X-Requested-with, Content-Type, Accept, Authorization'); // Define which kind of headers we want to accept
+    // res.header('Access-Control-Allow-Headers','Origin, X-Requested-with, Content-Type, Accept, Authorization'); // Define which kind of headers we want to accept
+    res.header('Access-Control-Allow-Headers', '*');
     // All above mention headers can be appended to request
     if(req.method === 'OPTIONS') { // when we send POST request or a PUT request 
         res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET');

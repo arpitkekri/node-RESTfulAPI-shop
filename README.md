@@ -1,5 +1,5 @@
 # Shoping Cart API
-__Build a descriptive RESTful API for E-commerce shopping application using Node, Express and MongoDB__
+__This is a descriptive RESTful API for E-commerce shopping application using Node, Express and MongoDB__
 
 ```npm install --save express```
 

@@ -4,7 +4,7 @@
 - This is not follow schema like SQL database in which we have to put same type of data in same column and its a very great thing about it
 - This is no SQL database 
 
-## setup
+## Setup locally
 1. download mongoDB community version ~ 216 MB and install 
 2. make directory in __C:/>__ drive named data
 3. inside data make another directory db
@@ -14,10 +14,10 @@
 7. open a new powershell admin and run command "mongo" => here you can pass query
 
 ## Commands and searching/querying data
->db               => (test database by dedault)
->use arpit        => (switched to database named arpit, if not present create new)
->show dbs         => (showing all database present)
->show collections => (showing all colection in database in which you currently are)
+- >db               => (test database by dedault)
+- >use arpit        => (switched to database named arpit, if not present create new)
+- >show dbs         => (showing all database present)
+- >show collections => (showing all colection in database in which you currently are)
 >db.text          => (make a __text__ colection in arpit database)
 
 - we have to insert minimum 1 document row to see our database

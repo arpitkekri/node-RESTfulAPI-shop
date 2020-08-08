@@ -89,3 +89,10 @@
 ## Mongoose
 - Mongoose is an object data modeling (ODM) library for mongoDB and Node.js
 - Worked as a layer between Node.js and mongoDB 
+
+## mongod vs mongo
+- mongod is the host process for the Database.
+- mongo is the command-line shell that connects to a specific instance of mongod.
+- When you run mongo with no parameters it defaults to connecting to the localhost on port __27017__.
+- If you run mongo against an invalid host_machine:port combination then it will fails to connect.
+

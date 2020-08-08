@@ -1,3 +1,6 @@
+# Shoping Cart API
+__Build a descriptive RESTful API for E-commerce shopping application using Node, Express and MongoDB__
+
 ```npm install --save express```
 
 - --save create a entry in package.json

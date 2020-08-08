@@ -28,7 +28,7 @@
 ```
 
 ## Inserting data in mongo db
-```JavaScript
+```
 >use arpitKart 
 >db.items.insertOne({name: "Samsung 30s", price: 22000, rating: 4.5, qty: 233, sold: 98})    => (insert only one row)
 

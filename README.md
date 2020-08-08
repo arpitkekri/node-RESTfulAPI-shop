@@ -1,5 +1,6 @@
 # Shoping Cart API
 __This is a descriptive RESTful API for E-commerce shopping application using Node, Express and MongoDB__
+
 __Version 1.0.0 *(major, minor, patch)*__
 
 
@@ -34,12 +35,16 @@ __Version 1.0.0 *(major, minor, patch)*__
 
 ![alt text](https://github.com/arpitkekri/node-RESTfulAPI-shop/blob/master/mongoDB%20and%20mongoose/CORS%20errors.jpg)
 
-- If traditional web app client and server has same url like localhost:3000
+- Traditional web app client and server has same url like localhost:3000
 - But in RESTful API client and server typically has different urls like localhost:4000 and localhost:3000 or even the port no is different
 - So request fail but we want to allow access because we serve data not application
 - We can disable this mechanism by sending some headers from server to client which tell you can have access
 - So ensure we send right headers back
-- npm install --save mongoose  very problemetic
+
+
+# 
+
+- npm install --save mongoose
 - npm install --save multer
 - https://github.com/expressjs/multer  bhut problem aayi fir ye pdha
 

@@ -96,3 +96,9 @@
 - When you run mongo with no parameters it defaults to connecting to the localhost on port __27017__.
 - If you run mongo against an invalid host_machine:port combination then it will fails to connect.
 
+# mongoDB_ATLAS
+- This is a online database in mongoDB server 
+- You can connect with it using mongoose
+- In clusters we can see our data collections, connections and other information.
+- I used it in this project 
+![alt text](https://github.com/arpitkekri/node-RESTfulAPI-shop/blob/master/mongoDB%20and%20mongoose/mongoDB_ATLAS.jpg)  

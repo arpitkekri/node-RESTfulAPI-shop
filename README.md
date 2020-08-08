@@ -1,7 +1,7 @@
 # Shoping Cart API
-__This is a descriptive RESTful API for E-commerce shopping application using Node, Express and MongoDB__
+- __This is a descriptive RESTful API for E-commerce shopping application using Node, Express and MongoDB__
 
-__Version 1.0.0 *(major, minor, patch)*__
+- __Version 1.0.0 *(major, minor, patch)*__
 
 
 ```npm install --save express```

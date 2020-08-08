@@ -27,7 +27,7 @@
 
 - Idea behind it : Security Concept
 
-![alt text](https://github.com/arpitkekri/node-RESTfulAPI-shop/blob/master/CORS.jpg)
+![alt text](https://github.com/arpitkekri/node-RESTfulAPI-shop/blob/master/mongoDB%20and%20mongoose/CORS%20errors.jpg)
 
 - If traditional web app client and server has same url like localhost:3000
 - But in RESTful API client and server typically has different urls like localhost:4000 and localhost:3000 or even the port no is different

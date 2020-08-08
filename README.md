@@ -26,23 +26,20 @@ __Version 1.0.0 *(major, minor, patch)*__
 
 - Json Data has only strings 
 
-# CORS errors
+## Handle CORS errors
 - CORS : CORS stands for Cross-Origin Resource Sharing
-
 - This look like: "No access control allow original header is present on the requested resource"
-
 - Idea behind it : Security Concept
-
 ![alt text](https://github.com/arpitkekri/node-RESTfulAPI-shop/blob/master/mongoDB%20and%20mongoose/CORS%20errors.jpg)
-
 - Traditional web app client and server has same url like localhost:3000
 - But in RESTful API client and server typically has different urls like localhost:4000 and localhost:3000 or even the port no is different
 - So request fail but we want to allow access because we serve data not application
 - We can disable this mechanism by sending some headers from server to client which tell you can have access
-- So ensure we send right headers back
+- So ensure we send right headers back to handle CORS errors
+- __IMP Point__ : This errors can avoided by testing tools like postman but not browser. 
 
 
-# 
+## next
 
 - npm install --save mongoose
 - npm install --save multer

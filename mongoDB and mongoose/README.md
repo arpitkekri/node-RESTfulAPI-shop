@@ -19,10 +19,13 @@
 >use arpit        => (switched to database named arpit, if not present create new)
 >show dbs         => (showing all database present)
 >show collections => (showing all colection in database in which you currently are)
->db.text          => (make a __text__ colection in arpit database)
+>db.text          => (make a text colection in arpit database)
 ```
-- we have to insert minimum 1 document row to see our database
+- We have to insert minimum 1 document row to see our database in show database command.
+
+```
 >db.text.insert({})  => (insert a empty row in text collection present in arpit database)
+```
 
 ## Inserting data in mongo db
 >use arpitKart 

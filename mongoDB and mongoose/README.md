@@ -2,7 +2,14 @@
 - mongoDB prevent duplicate entries by assign a unique __id__ to all document rows 
 - provide CURD operations (Create, Update, Read, Delete)
 - This is not follow schema like SQL database in which we have to put same type of data in same column and its a very great thing about it
-- This is no SQL database 
+- This is no SQL database
+- Document Oriented Database
+- Open-source, cross-platform and written in C++
+
+### Document oriented database
+- Stores data as a documents
+- Data stored as BSON
+- Tables = Collections and Rows = Documents
 
 ## Setup locally
 1. download mongoDB community version ~ 216 MB and install 
@@ -38,34 +45,46 @@
 ```
 
 ## Searching for data in mongo db
+```
 >use arpitKart
 >db.items.find()     => (print all data from items collection)
 
 >db.items.find({rating: 3.5})  => (This query will return all the objects with rating equal to 3.5)
 >db.items.find({rating: {$gte: 3.5}})  =>  gte -> greater than equalto
 >db.items.find({rating: {$gt: 3.5}})   =>  gt  -> greater than
+```
 
 ### And operator
+```
 >db.items.find({rating: {$gt: 3.5}, price:{$gt: 4000}})
 >db.items.find({rating: {$lt: 3.5}, price:{$gt: 114000}})  => lt -> less than
+```
 
 ### OR operator
+```
 >db.items.find({ 
     $or:[{rating: {$lt: 3.5}}, {price:{$gt: 114000}}] 
 })
+```
 
 ## Specific query 
+```
 >db.items.find({rating: {$gt: 3.5}}, {rating: 1})          => (only shows rating column)
 >db.items.find({rating: {$gt: 3.5}}, {rating: 1, qty: 1})  => (shows rating and qty column)
+```
 
 ## Deleting items from the Mongo Database
+```
 >db.items.deleteOne({price: 22000})  => (deleteOne will delete the matching document entry and will delete the first entry in case of multi document match)
 >db.items.deleteMany({price: 129000})
+```
 
 ## Updating data from the mongo Database
+```
 >db.anotherCollection.insertOne({a: 89})    => (make a new collection __anotherCollection__)
 >db.items.updateOne({name: "Moto 30s"}, {$set: {price: 2}})  => (only update first one)
 >db.items.updateMany({name: "Moto 30s"}, {$set: {price: 3, rating: 1}})  => (update all with name: "Moto 30s" and set price = 3 and rating = 1)
+```
 
 ## Mongoose
 - Mongoose is an object data modeling (ODM) library for mongoDB and Node.js

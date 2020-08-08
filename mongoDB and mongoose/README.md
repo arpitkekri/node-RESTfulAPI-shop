@@ -14,7 +14,7 @@
 7. open a new powershell admin and run command "mongo" => here you can pass query
 
 ## Commands and searching/querying data
-- >db               => (test database by dedault)
+- > db               => (test database by dedault)
 - >use arpit        => (switched to database named arpit, if not present create new)
 - >show dbs         => (showing all database present)
 - >show collections => (showing all colection in database in which you currently are)

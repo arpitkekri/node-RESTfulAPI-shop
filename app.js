@@ -3,13 +3,14 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
+const bodyParser = require('body-parser');
 
 mongoose.connect('mongodb+srv://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop.wlh2t.mongodb.net/node-rest-shop?retryWrites=true&w=majority', 
 {
@@ -43,8 +44,10 @@ mongoose.Promise = global.Promise;
 
 app.use(morgan('dev')); // In terminal print ` GET /orders/454512 200 2.319 ms - 46 ` basically log for developer
 app.use('/uploads', express.static('uploads'));
-app.use(bodyParser.urlencoded({extended: false})); // only support simple encoded url encoded data
-app.use(bodyParser.json()); // extract json data
+// app.use(bodyParser.urlencoded({extended: false})); // only support simple encoded url encoded data
+// app.use(bodyParser.json()); // extract json data
+app.use(express.urlencoded({extended: false})); // only support simple encoded url encoded data
+app.use(express.json()); // extract json data
 // For append headers  
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*'); // Headers has key value pair

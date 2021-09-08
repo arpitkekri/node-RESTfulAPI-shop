@@ -91,3 +91,5 @@ app.use((error, req, res, next) => { // This handle all kind of errors
 });
 
 module.exports = app;
+
+// Get request on http://localhost:3000/products

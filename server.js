@@ -8,3 +8,5 @@ const port = process.env.PORT || 3000;
 const server = http.createServer(app);
 
 server.listen(port);
+
+// Get request on http://localhost:3000/products

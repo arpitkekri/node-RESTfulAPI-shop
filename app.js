@@ -10,7 +10,6 @@ require('dotenv').config();
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
-const bodyParser = require('body-parser');
 
 mongoose.connect('mongodb+srv://node-rest-shop:' + process.env.MONGO_ATLAS_PW + '@node-restfulapi-shop.wlh2t.mongodb.net/node-rest-shop?retryWrites=true&w=majority', 
 {
